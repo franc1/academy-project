@@ -1,0 +1,43 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/lacademy?useUnicode=true&characterEncoding=utf8&useSSL=false
+    name: academy
+    username: root
+    password: root
+    hikari:
+      data-source-properties:
+        cachePrepStmts: true
+        prepStmtCacheSize: 250
+        prepStmtCacheSqlLimit: 2048
+        useServerPrepStmts: true
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLInnoDBDialect
+    database: MYSQL
+    show_sql: true
+    properties:
+      hibernate.cache.use_second_level_cache: false
+      hibernate.cache.use_query_cache: false
+      hibernate.generate_statistics: true
+  liquibase:
+    change-log: classpath:liquibase/master.xml
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+server:
+  port: 8080
+  
+debug: true
+
+microservice:
+  key: Test123
+  
+jwt:
+  secret: YWNhZGVteQ==
+  expiration: 900
+  
+articles:
+  file-path: /Users/Ilir/Desktop/demo_spring/

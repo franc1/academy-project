@@ -1,0 +1,8 @@
+"name";"description"
+"ROLE_ADMIN";"Administrator"
+"ROLE_USER";"User"
+"ROLE_MANAGER";"Manager"
+"ROLE_DEVELOPER";"Developer"
+"ROLE_CEO";"Chief Execution Officer"
+"ROLE_CTO";"Chief Technical Officer"
+"ROLE_TECHNICAL_LEAD";"Technical Lead"

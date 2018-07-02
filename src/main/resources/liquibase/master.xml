@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd">
+	
+	<!-- Migrations goes here... -->
+    <include file="./migrations/201806111800_added_Entity_User.xml" relativeToChangelogFile="true" />
+  	<include file="./migrations/201806111830_added_Entity_Role.xml" relativeToChangelogFile="true" />
+    <include file="./migrations/201806111900_added_Pivot_UserRoles.xml" relativeToChangelogFile="true" />
+    <include file="./migrations/201806131750_added_Entity_Department.xml" relativeToChangelogFile="true" />
+    <include file="./migrations/201806131747_added_Entity_Employee.xml" relativeToChangelogFile="true" />
+    <include file="./migrations/201806151700_added_Entity_Article.xml" relativeToChangelogFile="true" />
+    <include file="./migrations/201806151710_added_Entity_Comment.xml" relativeToChangelogFile="true" />
+    <include file="./migrations/201806301348_updated_Entity_Comment.xml" relativeToChangelogFile="true"/>
+    <include file="./migrations/201806242345_new_users.xml" relativeToChangelogFile="true"/>
+    <include file="./migrations/20180623184400_added_Entity_Document.xml" relativeToChangelogFile="true" />
+    <include file="./migrations/201806231856_added_column_document_to_articles.xml" relativeToChangelogFile="true" />
+    <include file="./migrations/201806231847_foreign_keys.xml" relativeToChangelogFile="true" />
+    <include file="./migrations/201806291745_added_Entity_Category.xml" relativeToChangelogFile="true" />
+    <include file="./migrations/201806291751_added_column_category_to_articles.xml" relativeToChangelogFile="true" />
+
+</databaseChangeLog>
