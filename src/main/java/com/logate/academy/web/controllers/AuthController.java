@@ -55,7 +55,6 @@ public class AuthController {
             return new ResponseEntity<>(new JWTToken(jwt), HttpStatus.OK);
         }
         catch (AuthenticationException exception) {
-        	LOGGER.info(exception.getLocalizedMessage() + " --->  ERROR 2 !!!");
             return new ResponseEntity<>(exception.getLocalizedMessage(), HttpStatus.UNAUTHORIZED);
         }
     }
